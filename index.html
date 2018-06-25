@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- character encoding -->
+        <meta charset="UTF-8">
+        <!-- title tag -->
+        <title>Technology: Good or Bad?</title>
+        <!-- mobile-friendly viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- W3.CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- custom style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/jpg" href="img/pexels-photo-373543.jpeg">
+    </head>
+
+    <body>
+
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#question" class="w3-bar-item w3-button">The Question</a>
+                <a href="#pros" class="w3-bar-item w3-button w3-hide-small">The Pros</a>
+                <a href="#cons" class="w3-bar-item w3-button w3-hide-small">The Cons</a>
+                <a href="#conclusion" class="w3-bar-item w3-button w3-hide-small">Our conslusion</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#pros" class="w3-bar-item w3-button">The pros</a>
+                <a href="#cons" class="w3-bar-item w3-button">The cons</a>
+                <a href="#conclusion" class="w3-bar-item w3-button">Our conclusion</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">IS <span class="w3-hide-small">TECHNOLOGY</span> GOOD OR BAD?</span>
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="question">
+            <h3 class="w3-center">THE QUESTION</h3>
+            <p class="w3-center"><em>Is technology good or bad?</em></p>
+            <p>This is a long standing discussion that we, as a society, have pondered for the past few decades. It has been brought up in school, work, and even just while strolling outside. Here are some stats about social media throughout the past few years, and these have only been increasing.</p>
+        </div>
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"><i class="fa fa-facebook-square"></i> 100 Billion</span><br>
+                Facebook interactions per day
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"><i class="fa fa-shopping-bag"></i> 91%</span><br>
+                of retail brands use 2 or more social media channels  </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"><i class="fa fa-money"></i> $40 Billion</span><br>
+                was spent on social network advertising in 2016  </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge"><i class="fa fa-search"></i> 40,000</span><br>
+                searches every second on google
+            </div>
+        </div>
+
+        <!-- Second Parallax Image with Portfolio Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide w3-black">PROS</span>
+            </div>
+        </div>
+
+        <!-- Container (Portfolio Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="pros">
+            <h3 class="w3-center">The Pros</h3>
+            <ul>
+                <li>Low cost for marketing and advertising</li>
+                <li>Source of instant feedback and news</li>
+                <li>Can keep in touch with friends who are not close by, quick way of communication</li>
+                <li>Fun and enjoyable → People enjoy looking at funny videos or sports highlights as a way to take a break during the day and at work</li>
+                <li>Can gather information easy (surveys)</li>
+                <li>Connect with co-workers and employees → way to find jobs and make connections</li>
+                <li>Allows actors, musicians, comedians, and writers to show their work</li>
+                <li>Make new friends through social media, video games, etc</li>
+            </ul>
+            <p>Social media today has a multitude of advantages in everyday life. People are able to make keep long distance relationships going by texting and sending pictures back and forth. It serves as a easy way of communication and it allows one to make new friends through video games and other apps. Not only does it help individuals, but companies are also using social media in ways to boost business. Companies can use social media to post advertisements to help get recognition for their product/service. Around 50% of people claim that they use social media as their source of news rather than official news outlets because of its convenience and easy accessibility. Furthermore, people enjoy scrolling through their feed as a way of entertainment and to take a break during the day from work or school. Big social sites such as linkedin and indeed.com have helped many people find new job opportunities and get back to working. </p>
+            <img class="w3-image image2" src="img/socialmedia.png"><img class="w3-image image2 image" src="img/worldwideconnections.png">
+        </div>
+
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div>
+
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide w3-black">CONS</span>
+            </div>
+        </div>
+
+
+        <div class="w3-content w3-container w3-padding-64" id="cons">
+            <h3 class="w3-center">The Cons</h3>
+            <ul>
+                <li>Lacks emotional connections</li>
+                <li>People can be hurtful (cyberbullying)</li>
+                <li>Easy to spread rumors (fake news)</li>
+                <li>Can cause bad face to face skills</li>
+                <li>Can be a distraction</li>
+            </ul>
+            <p>With social media comes some drawbacks as well. One of the major problems with social media is that it has been used as a platform for harassment and bullying. Cyberbullying has grow with as social media has expanded because people feel “protected” when talking mean about some online versus saying it face to face. Fake news and lies can easily spread through social media which can ruin someone’s name, business, work, etc. Finally, many feel like that social media is causing important life skills to deteriorate, such as face to face interactions and keeping a conversation going. Some of these problems are trying to be eliminated such as cyberbullying and fake news. </p>
+            <img class="w3-image image2 image" src="img/cyberbullying.jpg"><img class="w3-image image1 image2" src="img/socialmedia2.jpg">
+        </div>
+
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="bgimg-4 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide w3-black"> THE CONCLUSION</span>
+            </div>
+        </div>
+
+
+        <div class="w3-content w3-container w3-padding-64" id="conclusion">
+            <h3 class="w3-center">Our Conclusion</h3>
+            <ul>
+                <li>If used right, social media can be a very helpful tool</li>
+                <li>More and more is being done to prevent cyber bullying</li>
+                <li>Great way to keep in touch with friends and family</li>
+                <li>Make more friends, especially if you are shy in person</li>
+                <li>When not overused, it can be useful for seeing news and messaging others without losing “face to face” skills</li>
+            </ul>
+            <p>Today cyberbullying is a hot topic that is being tackled by state officials, their have been stricter changes to the states bullying, harassment, and intimidation policies to help protect the victims. When used in moderation and appropriately social media can be a very effective tool. It helps people keep in touch over long distances, quick way of communication, and make/hangout with friends. Overall there are many advantages to social media and even though there are some drawbacks, when not overused or misused, the pros outweigh the cons.</p>
+            <img class="image3 image2" src="img/socialmedia4.png"> <img class="image image2" src="img/foto-300x200.jpg">
+        </div>
+
+    </body>
+
+</html>
